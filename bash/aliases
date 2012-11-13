@@ -44,31 +44,18 @@ function gblame() { git blame $1 | subl -n -w; }
 function take() { mkdir $1; cd $1; }
 alias tk="take"
 
-# Editor aliases 
-alias m="mate"
-alias m.="mate ."
-alias v="mvim"
-alias v.="mvim ."
+# Editor aliases
 alias s="subl"
 alias s.="subl ."
 
 alias unixtime="date +%s"
 
 # Important directory shortcuts
-alias ht="cd /Library/WebServer/Sites/"
-alias hm="cd ~"
-alias site="cd ~/Ruby/danharper.me/"
-alias dot="cd ~/.bin/dotfiles/"
+alias home="cd ~"
 
 # bashrc & vimrc
 alias reload="source ~/.bashrc"
-alias ea="subl -n -w ~/.bin/dotfiles/bash/aliases && reload"
 alias hosts="sudo subl -n /etc/hosts"
-alias vimrc="mvim ~/.bin/dotfiles/vimrc"
-
-# nanoc aliases
-alias na="nanoc aco"
-alias nc="nanoc co"
 
 # Jumplist aliases
 alias jl="jump list"
@@ -113,11 +100,5 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true; kil
 alias showlibrary="chflags nohidden ~/Library/"
 alias hidelibrary="chflags hidden ~/Library/"
 
-# Fix VirtualBox Error
-alias fixvirtualbox="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
-
-# BitCoin client connections
-alias bitcoin="/Applications/Bitcoin.app/Contents/MacOS/bitcoin -addnode=69.164.218.197 -addnode=64.22.103.150 -addnode=173.242.112.53 -addnode=178.79.147.99 -addnode=184.106.111.41 -addnode=91.85.220.84 -addnode=173.224.125.222"
-
 # Tail Today's FuelPHP App Log
-alias fuellog="tail -f fuel/app/logs/"`eval date +%Y`"/"`eval date +%m`"/"`eval date +%d`".php"
+alias fuellog='tail -f "fuel/app/logs/`date '+%Y'`/`date '+%m'`/`date '+%d'`.php"'
