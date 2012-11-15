@@ -49,7 +49,7 @@ alias tk="take"
 alias s="subl"
 alias s.="subl ."
 
-alias unixtime="date +%s"
+alias unixtime="echo `date +%s` && date +%s | pbcopy"
 
 # Important directory shortcuts
 alias home="cd ~"
