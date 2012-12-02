@@ -40,10 +40,11 @@ BBLUE='\e[44m'
 BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
+# Colours for sed replacement
+TPUT_NOCOLOR=$(tput sgr0)
+TPUT_YELLOW=$(tput setaf 3)
+TPUT_BLUE=$(tput setaf 4)
 
-#PS1="\n\u:\w \[$EGREEN\]\$(vcprompt)\[$NO_COLOR\] \n→ "
-#PS1="\w \[$UGREEN\]\$(vcprompt --format \"%s:%b\")\[$NO_COLOR\] \[$EYELLOW\]\$(vcprompt --format \"%m%u\")\[$NO_COLOR\] → "
-# PS1="\w \[$EBLACK\]\$(vcprompt --format \"[%s:%b]\[$EGREEN\]%u\[$ECYAN\]%m \")\[$NO_COLOR\]→ "
-# PS1="\w \[$BLUE\][$(git_current_branch)]\[$NO_COLOR\]→ "
-PS1="\w → "
-PS1="\[\033[G\]$PS1"
+#PS1="\w \[$BLUE\]$(git_current_branch)\[$NO_COLOR\] → "
+#PS1="\w → "
+PS1='$TPUT_YELLOW\w $TPUT_NOCOLOR`git branch 2> /dev/null | grep -e ^* | sed -E s/^\\\\\*\ \(.+\)$/on\ $TPUT_BLUE[\\\\\1]$TPUT_NOCOLOR\ /`→ '
