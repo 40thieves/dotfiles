@@ -47,4 +47,4 @@ TPUT_BLUE=$(tput setaf 4)
 
 #PS1="\w \[$BLUE\]$(git_current_branch)\[$NO_COLOR\] → "
 #PS1="\w → "
-PS1='$TPUT_YELLOW\w $TPUT_NOCOLOR`git branch 2> /dev/null | grep -e ^* | sed -E s/^\\\\\*\ \(.+\)$/on\ $TPUT_BLUE[\\\\\1]$TPUT_NOCOLOR\ /`→ '
+PS1='\w `git branch 2> /dev/null | grep -e ^* | sed -E s/^\\\\\*\ \(.+\)$/on\ [\\\\\1]\ /`→ '
