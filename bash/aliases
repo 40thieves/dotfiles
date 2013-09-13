@@ -106,4 +106,15 @@ alias showlibrary="chflags nohidden ~/Library/"
 alias hidelibrary="chflags hidden ~/Library/"
 
 # Tail Today's FuelPHP App Log
-alias fuellog='tail -f "fuel/app/logs/`date '+%Y'`/`date '+%m'`/`date '+%d'`.php"'
+#alias fuellog='tail -f "fuel/app/logs/`date '+%Y'`/`date '+%m'`/`date '+%d'`.php"'
+alias fuellog=fuellog
+
+function fuellog() {
+	base="fuel/app/logs/`date '+%Y'`/`date '+%m'`/`date '+%d'`.php"
+	if [ $# -eq 0 ]; then
+		tail -f $base
+	else
+		search="> $@"
+		tail -f $base | grep --line-buffered "$search"
+	fi
+}
