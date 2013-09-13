@@ -38,6 +38,7 @@ alias gd='git diff | subl -n'
 alias gdc='git diff --cached | subl -n'
 alias gk="gitk --all"
 alias gl="git log --graph --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
+alias gll="git log --graph --name-status --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
 alias glo="git log --oneline"
 function gblame() { git blame $1 | subl -n -w; }
 
