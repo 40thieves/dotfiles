@@ -71,6 +71,9 @@ function j() {
 	fi
 }
 
+# Todo.txt
+alias t="todo.sh -d /usr/local/Cellar/todo-txt/2.9/todo.cfg"
+
 # Apache
 alias apache="sudo /usr/sbin/apachectl"
 alias a2r="sudo /usr/sbin/apachectl restart"
