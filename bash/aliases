@@ -118,3 +118,6 @@ function fuellog() {
 		tail -f $base | grep --line-buffered "$search"
 	fi
 }
+
+# Start mongodb server
+alias mongostart="mongod --fork --logpath /usr/local/var/log/mongodb/mongo.log --logappend"
