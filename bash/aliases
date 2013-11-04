@@ -52,6 +52,11 @@ alias s.="subl ."
 
 alias unixtime="echo `date +%s` && date +%s | pbcopy"
 
+# Vagrant aliases
+alias vup="vagrant up"
+alias vdown="vagrant halt"
+alias vs="vagrant status"
+
 # Important directory shortcuts
 alias home="cd ~"
 
