@@ -56,6 +56,7 @@ alias unixtime="echo `date +%s` && date +%s | pbcopy"
 alias vup="vagrant up"
 alias vdown="vagrant halt"
 alias vs="vagrant status"
+alias vssh="vagrant ssh"
 
 # Important directory shortcuts
 alias home="cd ~"
