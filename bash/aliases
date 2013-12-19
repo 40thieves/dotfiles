@@ -79,6 +79,7 @@ function j() {
 
 # Todo.txt
 alias t="todo.sh -d /usr/local/Cellar/todo-txt/2.9/todo.cfg"
+alias ts="t ls"
 
 # Apache
 alias apache="sudo /usr/sbin/apachectl"
