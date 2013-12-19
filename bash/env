@@ -1,9 +1,11 @@
 export EDITOR='subl -n -w'
 export PATH=$PATH:~/.bin
-export PATH=$PATH:/usr/local/lib/node
 
 # PHP 5.4 CLI
 export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+
+# Mosquitto
+export PATH=$PATH:/usr/local/sbin/
 
 #VirtualBox
 export PATH=$PATH:/Applications/VirtualBox.app/Contents/MacOS
