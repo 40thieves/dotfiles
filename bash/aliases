@@ -58,6 +58,8 @@ alias vdown="vagrant halt"
 alias vs="vagrant status"
 alias vssh="vagrant ssh"
 
+alias m="mocha -R spec"
+
 # Important directory shortcuts
 alias home="cd ~"
 
