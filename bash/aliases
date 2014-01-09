@@ -128,5 +128,8 @@ function fuellog() {
 	fi
 }
 
+# Tail the Laravel log from the root dir
+alias laralog="tail -f app/storage/logs/laravel.log"
+
 # Start mongodb server
 alias mongostart="mongod --fork --logpath /usr/local/var/log/mongodb/mongo.log --logappend"
