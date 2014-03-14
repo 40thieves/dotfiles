@@ -11,6 +11,9 @@ alias a="la"
 alias lo="ls -AF1"
 alias ll="ls -AFhl"
 
+# Copy pwd
+alias pwdc="pwd | pbcopy"
+
 # Build InventoryBase from develop branch and deploy that shit
 alias dbd="./devbuild && ./deploy"
 
@@ -49,6 +52,10 @@ alias tk="take"
 # Editor aliases
 alias s="subl"
 alias s.="subl ."
+
+# Atom
+alias a="atom"
+alias a.="atom ."
 
 alias unixtime="echo `date +%s` && date +%s | pbcopy"
 
