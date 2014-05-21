@@ -11,12 +11,6 @@ alias a="la"
 alias lo="ls -AF1"
 alias ll="ls -AFhl"
 
-# Copy pwd
-alias pwdc="pwd | pbcopy"
-
-# Build InventoryBase from develop branch and deploy that shit
-alias dbd="./devbuild && ./deploy"
-
 # Git aliases
 function git_current_branch() {
 	git symbolic-ref HEAD 2> /dev/null | sed -e 's/refs\/heads\///'
@@ -49,22 +43,7 @@ function gblame() { git blame $1 | subl -n -w; }
 function take() { mkdir $1; cd $1; }
 alias tk="take"
 
-# Editor aliases
-alias s="subl"
-alias s.="subl ."
-
-# Atom
-alias a="atom"
-alias a.="atom ."
-
-alias unixtime="echo `date +%s` && date +%s | pbcopy"
-
-# Vagrant aliases
-alias vup="vagrant up"
-alias vdown="vagrant halt"
-alias vs="vagrant status"
-alias vssh="vagrant ssh"
-
+# Mocha
 alias m="mocha -R spec"
 
 # Important directory shortcuts
@@ -72,68 +51,13 @@ alias home="cd ~"
 
 # bashrc & vimrc
 alias reload="source ~/.bashrc"
-alias hosts="sudo subl -n /etc/hosts"
-
-# Jumplist aliases
-alias jl="jump list"
-alias ja="jump add"
-alias jd="jump delete"
-function j() {
-	if [ $# -eq 0 ]; then
-		jump list
-	else
-		jump $@
-	fi
-}
-
-# Todo.txt
-alias t="todo.sh -d /usr/local/Cellar/todo-txt/2.9/todo.cfg"
-alias ts="t ls"
 
 # Apache
-alias apache="sudo /usr/sbin/apachectl"
-alias a2r="sudo /usr/sbin/apachectl restart"
+#alias apache="sudo /usr/sbin/apachectl"
+alias a2r="sudo service apache2 restart"
 
-# MySQL
-function mysql() {
-	if [ $# -eq 0 ]; then
-		/usr/local/Cellar/mysql/5.5.25/bin/mysql -u root
-	else
-		/usr/local/Cellar/mysql/5.5.25/bin/mysql.server $@
-	fi
-}
-
-# Restart wireless
-alias resetip="sudo ipconfig set en1 BOOTP; sudo ipconfig set en1 DHCP"
-
-# Flush DNS
-alias flushdns="dscacheutil -flushcache"
-
-# Toggle hidden files in Finder
-alias showhidden="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
-alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
-
-# Hide/show desktop icons
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false; killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true; killall Finder"
-
-# Hide/show ~/Library in Finder
-alias showlibrary="chflags nohidden ~/Library/"
-alias hidelibrary="chflags hidden ~/Library/"
-
-# Tail Today's FuelPHP App Log
-#alias fuellog='tail -f "fuel/app/logs/`date '+%Y'`/`date '+%m'`/`date '+%d'`.php"'
-alias fuellog=fuellog
-
-function fuellog() {
-	base="fuel/app/logs/`date '+%Y'`/`date '+%m'`/`date '+%d'`.php"
-	if [ $# -eq 0 ]; then
-		tail -f $base
-	else
-		search="> $@"
-		tail -f $base | grep --line-buffered "$search"
-	fi
-}
+# nginx
+alias n2r="sudo service nginx restart"
 
 # Tail the Laravel log from the root dir
 alias laralog="tail -f app/storage/logs/laravel.log"
