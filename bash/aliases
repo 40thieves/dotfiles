@@ -4,12 +4,11 @@ alias ...="cd ../.."
 alias bk="cd -"
 
 # Improved listing
-alias ls="ls -F"
-alias l="ls"
-alias la="ls -AF"
-alias a="la"
-alias lo="ls -AF1"
-alias ll="ls -AFhl"
+alias ls="ls -F --color=auto"
+alias l="ls --color=auto"
+alias la="ls -AF --color=auto"
+alias lo="ls -AF1 --color=auto"
+alias ll="ls -AFhl --color=auto"
 
 # Git aliases
 function git_current_branch() {
