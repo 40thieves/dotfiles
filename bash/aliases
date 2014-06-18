@@ -139,4 +139,5 @@ function fuellog() {
 alias laralog="tail -f app/storage/logs/laravel.log"
 
 # Start mongodb server
-alias mongostart="mongod --fork --logpath /usr/local/var/log/mongodb/mongo.log --logappend"
+alias mongostart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+alias mongostop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
