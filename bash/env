@@ -1,8 +1,11 @@
 export EDITOR='subl -n -w'
 export PATH=$PATH:~/.bin
 
-# PHP 5.5 CLI
-export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+# PHP 5.6 CLI
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
+# Composer
+export PATH=$PATH:~/.composer/vendor/bin
 
 # Mosquitto
 export PATH=$PATH:/usr/local/sbin/
