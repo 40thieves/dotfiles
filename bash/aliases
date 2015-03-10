@@ -3,6 +3,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias bk="cd -"
 
+# Fuzzy matching interactive cd
+function cdi() { cd $(find . -type d | pick); }
+
 # Improved listing
 alias ls="ls -F"
 alias l="ls"
@@ -142,3 +145,6 @@ alias laralog="tail -f app/storage/logs/laravel.log"
 # Start mongodb server
 alias mongostart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mongostop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+
+# Run a command from history with a fuzzy matching interactive UI
+function drwho() { $(history | cut -c8- | sort -u | pick); }
