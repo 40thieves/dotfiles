@@ -44,6 +44,7 @@ alias gl="git log --graph --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue)
 alias gll="git log --graph --name-status --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
 alias glo="git log --oneline"
 function gblame() { git blame $1 | subl -n -w; }
+function gcoi() { git checkout $(git branch | pick); }
 
 # mkdir and cd into it
 function take() { mkdir $1; cd $1; }
