@@ -16,5 +16,5 @@ export PATH=$PATH:/Applications/VirtualBox.app/Contents/MacOS
 # Vi mode in my Terminal? YES FUCKING PLEASE!!
 set -o vi
 
-# Jumplist
-source ~/.jumplist-driver
+# rbenv
+eval "$(rbenv init -)"
