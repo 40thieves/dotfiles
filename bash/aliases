@@ -79,12 +79,12 @@ alias reload="source ~/.bashrc"
 alias hosts="sudo subl -n /etc/hosts"
 
 # Jumplist aliases
-alias jl="jump list"
-alias ja="jump add"
-alias jd="jump delete"
+alias jl="jump --list"
+alias ja="jump --add"
+alias jd="jump --delete"
 function j() {
 	if [ $# -eq 0 ]; then
-		jump list
+		jump --list
 	else
 		jump $@
 	fi
