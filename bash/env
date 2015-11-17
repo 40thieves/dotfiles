@@ -21,3 +21,7 @@ eval "$(rbenv init -)"
 
 # Jump
 source `jump-bin --bash-integration`/shell_driver
+
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
