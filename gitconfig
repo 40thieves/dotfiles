@@ -1,0 +1,6 @@
+[user]
+	name = Alasdair Smith
+	email = ali@alasdairsmith.co.uk
+
+[core]
+	excludesfile = /Users/ali/.bin/gitignore_global
