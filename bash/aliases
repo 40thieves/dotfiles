@@ -148,3 +148,6 @@ alias mongostop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.p
 
 # Run a command from history with a fuzzy matching interactive UI
 function drwho() { $(history | cut -c8- | sort -u | pick); }
+
+# Pretty print json with jq
+alias json="jq ."
