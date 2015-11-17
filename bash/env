@@ -25,3 +25,6 @@ source `jump-bin --bash-integration`/shell_driver
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# Android sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk
