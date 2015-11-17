@@ -3,6 +3,7 @@
   "extends": "eslint-config-airbnb/base",
   "env": {
     "browser": true,
+    "node": true,
   },
   "rules": {
     // allow console
@@ -22,6 +23,9 @@
 
     // allow capitalised factory function
     "new-cap": 0,
+
+    // allow no trailing commas in object literals
+    "comma-dangle": [2, "never"],
 
     // tabs
     "indent": [2, "tab"],
