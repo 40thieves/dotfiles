@@ -151,3 +151,6 @@ function drwho() { $(history | cut -c8- | sort -u | pick); }
 
 # Pretty print json with jq
 alias json="jq ."
+
+# Open new diary entry
+alias journal='cd ~/Documents/Journal && subl -n `date +"%Y-%m-%d"`.md'
