@@ -4,6 +4,7 @@
   "env": {
     "browser": true,
     "node": true,
+    "mocha": true,
   },
   "rules": {
     // allow console
@@ -26,6 +27,12 @@
 
     // allow no trailing commas in object literals
     "comma-dangle": [2, "never"],
+
+    // disable checking for whitespace around blocks
+    "padded-blocks": 0,
+
+    // Sensible indenting on switch statements
+    [2, 4, {"SwitchCase": 1}],
 
     // tabs
     "indent": [2, "tab"],
