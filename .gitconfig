@@ -1,0 +1,7 @@
+[user]
+  name = Alasdair Smith
+  email = ali@alasdairsmith.co.uk
+
+[core]
+  excludesfile = /Users/ali/.bin/dotfiles/.gitignore_global
+  page = less -x1,5
