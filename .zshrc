@@ -103,7 +103,5 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='code -n -w'
 
-# # Vi mode in my Terminal? YES FUCKING PLEASE!!
-# set -o vi
-
 source ~/.bin/dotfiles/.aliases
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -15,13 +15,11 @@ function gcoi() { git checkout $(git branch | pick); }
 alias c="code"
 alias c.="code ."
 
-# bashrc & vimrc
-alias reload="source ~/.zshrc"
-
-alias hosts="sudo code -n /etc/hosts"
-
-# Remap z to old jump cmd
+# Remaps
 alias j="z"
+alias cat="bat"
 
-# Pretty print json with jq
-alias json="jq ."
+# Misc
+alias reload="source ~/.zshrc"
+alias json="jq ." # Pretty print json with jq
+alias hosts="sudo code -n /etc/hosts"
