@@ -62,7 +62,11 @@ ZSH_CUSTOM=~/.bin/dotfiles
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  docker
+  gitfast
+  npm
+  osx
+  vi-mode
   z
 )
 
