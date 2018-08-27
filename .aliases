@@ -1,0 +1,27 @@
+# Preferred ls
+alias ll="ls -AFhl"
+
+# Git
+alias g="git status -sb"
+alias gb="git branch"
+alias gap="git add -p"
+alias gps="git push --set-upstream origin $(current_branch)"
+alias gpl="git pull"
+alias gdc='git diff --cached'
+alias gl="git log --graph --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
+function gcoi() { git checkout $(git branch | pick); }
+
+# Editor aliases
+alias c="code"
+alias c.="code ."
+
+# bashrc & vimrc
+alias reload="source ~/.zshrc"
+
+alias hosts="sudo code -n /etc/hosts"
+
+# Remap z to old jump cmd
+alias j="z"
+
+# Pretty print json with jq
+alias json="jq ."
