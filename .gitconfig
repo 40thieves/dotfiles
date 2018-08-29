@@ -1,0 +1,13 @@
+[user]
+  name = Alasdair Smith
+  email = ali@alasdairsmith.co.uk
+
+[core]
+  excludesfile = /Users/ali/.bin/dotfiles/.gitignore_global
+
+[pager]
+      diff = diff-so-fancy | less --tabs=1,5 -RFX
+      show = diff-so-fancy | less --tabs=1,5 -RFX
+
+[diff-so-fancy]
+	markEmptyLines = false
