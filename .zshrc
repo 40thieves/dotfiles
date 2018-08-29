@@ -106,4 +106,7 @@ export EDITOR='code -n -w'
 source ~/.bin/dotfiles/.aliases
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
