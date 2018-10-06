@@ -1,0 +1,36 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "editor.cursorBlinking": "smooth",
+    "editor.dragAndDrop": false,
+    "editor.formatOnPaste": true,
+    
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.ruler": [
+        80
+    ],
+    "editor.renderIndentGuides": true,
+
+    "spellright.language": "en-GB",
+    "spellright.statusBarIndicator": false,
+    "spellright.documentTypes": [
+        "markdown"
+    ],
+    "explorer.openEditors.visible": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "files.associations": {
+        ".aliases": "shellscript",
+        ".eslintrc": "jsonc"
+    }
+}
