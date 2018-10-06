@@ -5,7 +5,7 @@ echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew update
-brew upgrade --all
+brew upgrade
 
 echo "Brew installing"
 
@@ -18,19 +18,15 @@ chsh -s /bin/zsh
 
 echo "Brew cask installing"
 
-brew cask install google-chrome firefox opera visual-studio-code iterm2 \
-gitup sublime-text typora alfred beardedspice slack flux kap rescuetime tyke \
+brew cask install google-chrome firefox opera visual-studio-code iterm2 nvm \
+gitup sublime-text typora spectacle alfred beardedspice slack flux kap rescuetime tyke \
 qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package
 
 brew cleanup
 
-echo "Installing nvm"
-
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-nvm alias default 8 # Make node 8 the default
-
 echo "npm installing"
 
+nvm alias default 8 # Make node 8 the default
 npm install -g gulp-cli nodemon serve create-react-app
 
 echo "Linking config"
