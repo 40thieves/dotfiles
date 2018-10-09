@@ -63,11 +63,12 @@ ZSH_CUSTOM=~/.bin/dotfiles
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   docker
-  gitfast
+  git
   npm
   osx
   vi-mode
   z
+  ruby
 )
 
 source $ZSH/oh-my-zsh.sh
