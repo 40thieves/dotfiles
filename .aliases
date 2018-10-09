@@ -15,6 +15,11 @@ function gcoi() { git checkout $(git branch | pick); }
 alias c="code"
 alias c.="code ."
 
+# Docker
+alias dup="docker-compose up"
+alias ds="docker-compose stop"
+alias dps="docker-compose ps"
+
 # Remaps
 alias j="z"
 alias cat="bat"
