@@ -18,6 +18,7 @@ alias c.="code ."
 # Docker
 alias dup="docker-compose up"
 alias ds="docker-compose stop"
+alias dl="docker-compose logs -f --tail=30"
 alias dps="docker-compose ps"
 
 # Remaps
