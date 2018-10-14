@@ -31,9 +31,9 @@ npm install -g gulp-cli nodemon serve create-react-app
 
 echo "Linking config"
 
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.npmrc ~/.npmrc
+ln -s ~/.bin/dotfiles/.zshrc ~/.zshrc
+ln -s ~/.bin/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.bin/dotfiles/.npmrc ~/.npmrc
 
 echo "Consider running https://github.com/mathiasbynens/dotfiles/blob/master/.macos"
 
