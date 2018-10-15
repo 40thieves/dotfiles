@@ -9,7 +9,7 @@ brew upgrade
 
 echo "Brew installing"
 
-brew install tree bat diff-so-fancy fzf pick tldr wifi-password jq nginx nvm
+brew install tree bat diff-so-fancy fzf pick tldr wifi-password jq nginx nvm gpg
 
 # Install zsh
 brew install zsh zsh-completions zsh-syntax-highlighting
@@ -19,7 +19,8 @@ chsh -s /bin/zsh
 echo "Brew cask installing"
 
 brew cask install google-chrome firefox opera visual-studio-code iterm2 \
-gitup sublime-text typora spectacle alfred beardedspice slack flux kap rescuetime tyke \
+gitup sublime-text typora spectacle alfred beardedspice slack flux kap \
+rescuetime tyke tunnelblick \
 qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package
 
 brew cleanup
