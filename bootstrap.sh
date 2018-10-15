@@ -19,8 +19,8 @@ chsh -s /bin/zsh
 echo "Brew cask installing"
 
 brew cask install google-chrome firefox opera visual-studio-code iterm2 \
-docker gitup sublime-text typora spectacle alfred beardedspice slack flux kap \
-robo-3t tyke tunnelblick \
+docker gitup sublime-text typora slack kap robo-3t \
+tyke spectacle alfred beardedspice tunnelblick \
 qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package
 
 brew cleanup
