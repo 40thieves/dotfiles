@@ -13,5 +13,5 @@ Wut? [This.](https://dotfiles.github.io/)
 ### Installation (easy, untested way)
 
 1. `mkdir -p ~/.bin/dotfiles`
-2. `git clone git@github.com:40thieves/dotfiles.git ~/dotfiles`
-3. `~/dotfiles/bootstrap.sh`
+2. `git clone git@github.com:40thieves/dotfiles.git ~/.bin/dotfiles`
+3. `~/.bin/dotfiles/bootstrap.sh`
