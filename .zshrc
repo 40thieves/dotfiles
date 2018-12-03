@@ -69,6 +69,7 @@ plugins=(
   vi-mode
   z
   ruby
+  rbenv
 )
 
 source $ZSH/oh-my-zsh.sh
