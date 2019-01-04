@@ -112,3 +112,6 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Disable sharing of history
+unsetopt share_history
