@@ -5,6 +5,7 @@ alias ll="ls -AFhl"
 alias g="git status -sb"
 alias gb="git branch"
 alias gap="git add -p"
+unalias gp # Remove git plugin alias which is easy to typo and accidentally push
 alias gps="git push -u origin $(current_branch)"
 alias gpl="git pull"
 alias gdc='git diff --cached'
