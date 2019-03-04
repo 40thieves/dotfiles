@@ -6,7 +6,7 @@ alias g="git status -sb"
 alias gb="git branch"
 alias gap="git add -p"
 unalias gp # Remove git plugin alias which is easy to typo and accidentally push
-alias gps="git push -u origin $(current_branch)"
+alias gps="git push"
 alias gpl="git pull"
 alias gdc='git diff --cached'
 alias gl="git log --graph --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
