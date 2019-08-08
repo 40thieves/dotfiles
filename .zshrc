@@ -57,17 +57,18 @@ ZSH_THEME="af-magic"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=~/.bin/dotfiles
 
+# Enable "lazy loading" of nvm to speed up new terminal initialisation a bit
+export NVM_LAZY_LOAD=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  docker
   git
-  npm
-  osx
   vi-mode
   z
+  zsh-nvm
   ruby
   rbenv
 )
@@ -107,9 +108,6 @@ export EDITOR='code -n -w'
 
 source ~/.bin/dotfiles/.aliases
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
