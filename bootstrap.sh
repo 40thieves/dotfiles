@@ -1,35 +1,53 @@
+set -e
+
+function confirm {
+  read -p  "$1 (y/n)" -n 1 -r
+  echo    # (optional) move to a new line
+  if [[ ! $REPLY =~ ^[Yy]$ ]]
+  then
+      [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 # handle exits from shell or function but don't exit interactive shell
+  fi
+}
+
 echo "Hello $(whoami)! Running set up"
 
+confirm "Install Homebrew?"
 echo "Installing Homebrew"
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew update
 brew upgrade
 
-echo "Brew installing"
+confirm "Run brew install for CLI utilities?"
+echo "Brew installing CLI utilities"
 
-brew install tree bat diff-so-fancy fzf pick tldr wifi-password jq nginx nvm gpg
+brew install git tree bat diff-so-fancy fzf pick tldr jq nginx nvm gpg
+
+confirm "Run brew install for zsh?"
+echo "Brew installing zsh"
 
 # Install zsh
 brew install zsh zsh-completions zsh-syntax-highlighting
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s /bin/zsh
 
+confirm "Run brew cask install?"
 echo "Brew cask installing"
 
 brew cask install google-chrome firefox opera visual-studio-code iterm2 \
 docker gitup sublime-text typora slack kap robo-3t \
-tyke spectacle alfred beardedspice tunnelblick \
+tyke spectacle alfred beardedspice \
 qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package
 
 brew cleanup
 
-echo "npm installing"
+confirm "Run nvm install --lts?"
+echo "nvm installing"
 
-nvm alias default 8 # Make node 8 the default
-npm install -g gulp-cli nodemon serve create-react-app
+nvm install --lts
 
+confirm "Symlink config files to home dir?"
 echo "Linking config"
 
 ln -s ~/.bin/dotfiles/.zshrc ~/.zshrc
