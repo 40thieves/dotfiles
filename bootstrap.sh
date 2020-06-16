@@ -35,11 +35,12 @@ chsh -s /bin/zsh
 confirm "Run brew cask install?"
 echo "Brew cask installing"
 
-brew cask install google-chrome firefox opera visual-studio-code iterm2 \
-docker gitup sublime-text typora slack kap robo-3t \
-tweetbot fantastical \
+brew cask install google-chrome firefox microsoft-edge opera \
+iterm2 visual-studio-code sublime-text gitup typora slack kap \
+tweetbot spectacle \
 tyke spectacle alfred beardedspice \
-qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package
+qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package \
+homebrew/cask-fonts/font-fira-code
 
 brew cleanup
 
