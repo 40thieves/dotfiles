@@ -22,7 +22,7 @@ brew upgrade
 confirm "Run brew install for CLI utilities?"
 echo "Brew installing CLI utilities"
 
-brew install git tree bat diff-so-fancy fzf pick tldr jq nginx nvm gpg
+brew install git tree bat diff-so-fancy fzf pick tldr jq nginx volta gpg
 
 confirm "Run brew install for zsh?"
 echo "Brew installing zsh"
@@ -37,15 +37,16 @@ echo "Brew cask installing"
 
 brew cask install google-chrome firefox opera visual-studio-code iterm2 \
 docker gitup sublime-text typora slack kap robo-3t \
+tweetbot fantastical \
 tyke spectacle alfred beardedspice \
 qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package
 
 brew cleanup
 
-confirm "Run nvm install --lts?"
-echo "nvm installing"
+confirm "Run volta install node?"
+echo "volta installing"
 
-nvm install --lts
+volta install node
 
 confirm "Symlink config files to home dir?"
 echo "Linking config"
