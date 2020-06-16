@@ -11,26 +11,18 @@
     "editor.cursorBlinking": "smooth",
     "editor.dragAndDrop": false,
     "editor.formatOnPaste": true,
-    
-    "sublimeTextKeymap.promptV3Features": true,
+
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "editor.ruler": [
+    "editor.rulers": [
         80
     ],
     "editor.renderIndentGuides": true,
 
-    "spellright.language": "en-GB",
-    "spellright.statusBarIndicator": false,
-    "spellright.documentTypes": [
-        "markdown"
-    ],
     "explorer.openEditors.visible": 0,
     "workbench.startupEditor": "newUntitledFile",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
-    "files.associations": {
-        ".aliases": "shellscript",
-        ".eslintrc": "jsonc"
-    }
+
+    "workbench.sideBar.location": "right"
 }

@@ -12,4 +12,4 @@ Config for some common applications.
 
 #### VS Code
 
-`mv ~/.bin/dotfiles/config/vscode/* ~/Library/Application\ Support/Code/User/`
+`cp -R ~/.bin/dotfiles/config/vscode/* ~/Library/Application\ Support/Code/User/`
