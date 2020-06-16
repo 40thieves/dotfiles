@@ -32,6 +32,11 @@ brew install zsh zsh-completions zsh-syntax-highlighting
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s /bin/zsh
 
+confirm "Set up fzf?"
+echo "Setting up fzf"
+
+$(brew --prefix)/opt/fzf/install --all
+
 confirm "Run brew cask install?"
 echo "Brew cask installing"
 
