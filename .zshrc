@@ -57,9 +57,6 @@ ZSH_THEME="af-magic"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=~/.bin/dotfiles
 
-# Enable "lazy loading" of nvm to speed up new terminal initialisation a bit
-export NVM_LAZY_LOAD=true
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -68,7 +65,6 @@ plugins=(
   git
   vi-mode
   z
-  zsh-nvm
   ruby
   rbenv
 )
@@ -103,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export VOLTA_HOME="/Users/ali/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 export EDITOR='code -n -w'
 
