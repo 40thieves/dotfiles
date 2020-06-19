@@ -22,7 +22,10 @@ brew upgrade
 confirm "Run brew install for CLI utilities?"
 echo "Brew installing CLI utilities"
 
-brew install git tree bat diff-so-fancy fzf pick tldr jq nginx volta gpg
+brew install \
+  git tree bat diff-so-fancy fzf pick tldr jq \
+  nginx volta \
+  pandoc wifi-password
 
 confirm "Run brew install for zsh?"
 echo "Brew installing zsh"
@@ -40,12 +43,13 @@ $(brew --prefix)/opt/fzf/install --all
 confirm "Run brew cask install?"
 echo "Brew cask installing"
 
-brew cask install google-chrome firefox microsoft-edge opera \
-iterm2 visual-studio-code sublime-text gitup typora slack kap \
-tweetbot spectacle \
-tyke spectacle alfred beardedspice \
-qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package \
-homebrew/cask-fonts/font-fira-code
+brew cask install \
+  google-chrome firefox microsoft-edge opera \
+  iterm2 visual-studio-code sublime-text gitup typora slack kap \
+  tweetbot spectacle hiddenbar bettertouchtool \
+  tyke spectacle alfred beardedspice dropbox spotify whatsapp minecraft zoomus \
+  qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package \
+  homebrew/cask-fonts/font-fira-code
 
 brew cleanup
 
