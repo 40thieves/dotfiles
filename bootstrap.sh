@@ -65,6 +65,6 @@ ln -s ~/.bin/dotfiles/.zshrc ~/.zshrc
 ln -s ~/.bin/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.bin/dotfiles/.npmrc ~/.npmrc
 
-echo "Consider running https://github.com/mathiasbynens/dotfiles/blob/master/.macos"
+echo "Consider running .macos"
 
 echo "Done."
