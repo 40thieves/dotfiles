@@ -4,11 +4,15 @@
 
 [core]
   excludesfile = /Users/ali/.bin/dotfiles/.gitignore_global
+  pager = delta
 
-[pager]
-  diff = diff-so-fancy | less --tabs=1,5 -RFX
-  show = diff-so-fancy | less --tabs=1,5 -RFX
-	branch = false
+[delta]
+  line-numbers = true
 
-[diff-so-fancy]
-	markEmptyLines = false
+# [pager]
+#   diff = diff-so-fancy | less --tabs=1,5 -RFX
+#   show = diff-so-fancy | less --tabs=1,5 -RFX
+	# branch = false
+
+# [diff-so-fancy]
+# 	markEmptyLines = false

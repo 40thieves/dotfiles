@@ -23,7 +23,7 @@ confirm "Run brew install for CLI utilities?"
 echo "Brew installing CLI utilities"
 
 brew install \
-  git tree bat diff-so-fancy fzf pick tldr jq \
+  git tree bat git-delta diff-so-fancy fzf pick tldr jq \
   nginx volta \
   pandoc wifi-password
 
