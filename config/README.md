@@ -13,3 +13,5 @@ Config for some common applications.
 #### VS Code
 
 `cp -R ~/.bin/dotfiles/config/vscode/* ~/Library/Application\ Support/Code/User/`
+
+`./vscode-extensions.sh`
