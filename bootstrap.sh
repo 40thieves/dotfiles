@@ -46,7 +46,7 @@ echo "Brew cask installing"
 brew cask install \
   google-chrome firefox microsoft-edge opera \
   iterm2 visual-studio-code sublime-text gitup typora slack kap \
-  tweetbot spectacle hiddenbar bettertouchtool \
+  tweetbot spectacle hiddenbar bettertouchtool vlc \
   tyke spectacle alfred beardedspice dropbox spotify whatsapp minecraft zoomus \
   qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package \
   homebrew/cask-fonts/font-fira-code
