@@ -6,6 +6,9 @@
   excludesfile = /Users/ali/.bin/dotfiles/.gitignore_global
   pager = delta
 
+[pull]
+	rebase = false
+
 [delta]
   line-numbers = true
 
