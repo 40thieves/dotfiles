@@ -47,7 +47,7 @@ brew cask install \
   google-chrome firefox microsoft-edge opera \
   iterm2 visual-studio-code sublime-text gitup typora slack kap \
   tweetbot spectacle hiddenbar bettertouchtool vlc \
-  tyke spectacle alfred beardedspice dropbox spotify whatsapp minecraft zoomus \
+  spectacle alfred beardedspice dropbox spotify whatsapp minecraft zoomus \
   glance suspicious-package \
   homebrew/cask-fonts/font-fira-code
 
