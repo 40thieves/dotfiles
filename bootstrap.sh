@@ -48,7 +48,7 @@ brew cask install \
   iterm2 visual-studio-code sublime-text gitup typora slack kap \
   tweetbot spectacle hiddenbar bettertouchtool vlc \
   tyke spectacle alfred beardedspice dropbox spotify whatsapp minecraft zoomus \
-  qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package \
+  glance suspicious-package \
   homebrew/cask-fonts/font-fira-code
 
 brew cleanup
