@@ -1,3 +1,7 @@
 README.md
+
+# Seems like this should be ignored by default, but I guess not
+chezmoi
+
 # Manually managed config
 manual_config
