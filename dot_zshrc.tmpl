@@ -62,8 +62,9 @@ export EDITOR='code -n -w'
 # Add volta to path
 export PATH={{ .chezmoi.homeDir }}.volta/bin:$PATH
 
-# Work only
 {{ if eq .env "work" }}
+# Work only
+
 # Set up make PATH
 PATH="$(brew --prefix)/opt/make/libexec/gnubin:$PATH"
 {{ end }}
