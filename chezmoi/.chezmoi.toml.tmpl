@@ -1,0 +1,8 @@
+{{- $env := promptString "Env (personal or work)" -}}
+{{- $email := promptString "Email" -}}
+{{- $fullname := promptString "Full name" -}}
+
+[data]
+    env = {{ $env | quote }}
+    email = {{ $email | quote }}
+    fullname = {{ $fullname | quote }}

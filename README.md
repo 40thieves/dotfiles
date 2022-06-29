@@ -1,17 +1,17 @@
-# dotfiles
+# Dotfiles
 
 Wut? [This.](https://dotfiles.github.io/)
 
-### Installation (hard way)
+Various aliases and bits of config.
 
-1. `mkdir -p ~/.bin/dotfiles`
-2. `git clone git@github.com:40thieves/dotfiles.git ~/dotfiles`
-3. `ln -s ~/dotfiles/.zshrc ~/.zshrc`
-4. `ln -s ~/dotfiles/.gitconfig ~/.gitconfig`
-5. `ln -s ~/dotfiles/.npmrc ~/.npmrc`
+Managed by [chezmoi](https://www.chezmoi.io/).
 
-### Installation (easy, untested way)
+## Set up
 
-1. `mkdir -p ~/.bin/dotfiles`
-2. `git clone git@github.com:40thieves/dotfiles.git ~/.bin/dotfiles`
-3. `~/.bin/dotfiles/bootstrap.sh`
+1. Run chezmoi init:
+
+  ```shell
+  sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply 40thieves
+  ```
+
+2. Follow the manual steps in `manual_config/README.md`

@@ -1,0 +1,87 @@
+#!/bin/sh
+
+set -e
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "bat"
+brew "fzf"
+brew "git"
+brew "git-delta"
+brew "jq"
+brew "pandoc"
+brew "pick"
+brew "tldr"
+brew "tree"
+brew "volta"
+brew "wifi-password"
+brew "youtube-dl"
+brew "zsh"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+
+{{ if eq .env "personal" }}
+brew "postgresql", restart_service: true
+{{ end }}
+
+{{ if eq .env "work" }}
+brew "ansible"
+brew "coreutils"
+brew "diffutils"
+brew "gh"
+brew "heroku"
+brew "make"
+brew "rbenv"
+brew "sops"
+{{ end }}
+
+cask "alfred"
+cask "dropbox"
+cask "fantastical"
+cask "firefox"
+cask "font-fira-code"
+cask "gitup"
+cask "google-chrome"
+cask "hiddenbar"
+cask "iterm2"
+cask "kap"
+cask "microsoft-edge"
+cask "mimestream"
+cask "minecraft"
+cask "moom"
+cask "obsidian"
+cask "qlcolorcode"
+cask "slack"
+cask "spotify"
+cask "sublime-text"
+cask "ticktick"
+cask "tweetbot"
+cask "typora"
+cask "visual-studio-code"
+cask "vlc"
+cask "whatsapp"
+cask "zoomus"
+
+{{ if eq .env "personal" }}
+cask "backblaze"
+cask "calibre"
+cask "tableplus"
+{{ end }}
+
+{{ if eq .env "work" }}
+cask "docker"
+cask "front"
+cask "google-cloud-sdk"
+cask "robo-3t"
+{{ end }}
+EOF
+
+# Manual install step
+$(brew --prefix)/opt/fzf/install
+
+brew cleanup

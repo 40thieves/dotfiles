@@ -1,12 +1,16 @@
+#!/bin/sh
+
+set -e
+
 EXTENSIONS=(
   aaron-bond.better-comments
-  cmstead.jsrefactor
+  cmstead.js-codeformer
   dbaeumer.vscode-eslint
   esbenp.prettier-vscode
   GitHub.vscode-pull-request-github
   mikestead.dotenv
   ms-vscode.sublime-keybindings
-  silvenon.mdx
+  sdras.inbedby7pm
   SimonSiefke.svg-preview
   streetsidesoftware.code-spell-checker
   Zignd.html-css-class-completion
