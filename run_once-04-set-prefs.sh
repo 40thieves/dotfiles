@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eset -e
+set -e
 
 # WARNING: NOT YET TESTED WITH FRESH MACHINE
 

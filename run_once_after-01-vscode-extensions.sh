@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eset -e
+set -e
 
 EXTENSIONS=(
   aaron-bond.better-comments
