@@ -41,17 +41,23 @@ plugins=(
   rbenv
 )
 
+# Set up oh-my-zsh
+# https://ohmyz.sh/
 source $ZSH/oh-my-zsh.sh
+
+# Set up zsh-syntax-highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# Enable fzf (fuzzy reverse command search)
+# https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Add volta to path
 export PATH={{ .chezmoi.homeDir }}.volta/bin:$PATH
 
 # Set VSCode as preferred editor
 export EDITOR='code -n -w'
-
-# Enable fzf (fuzzy reverse command search)
-# https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Disable sharing of history
 unsetopt share_history
