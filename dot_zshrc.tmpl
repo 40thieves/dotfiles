@@ -53,14 +53,14 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Add volta to path
-export PATH={{ .chezmoi.homeDir }}.volta/bin:$PATH
+# Disable sharing of history
+unsetopt share_history
 
 # Set VSCode as preferred editor
 export EDITOR='code -n -w'
 
-# Disable sharing of history
-unsetopt share_history
+# Add volta to path
+export PATH={{ .chezmoi.homeDir }}.volta/bin:$PATH
 
 # Work only
 {{ if eq .env "work" }}
