@@ -1,0 +1,45 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.renderWhitespace": "boundary",
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.dragAndDrop": false,
+  "editor.formatOnPaste": true,
+  "editor.rulers": [80],
+
+  "editor.multiCursorModifier": "ctrlCmd",
+  // "editor.snippetSuggestions": "top",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  "workbench.sideBar.location": "right",
+  "explorer.openEditors.visible": 0,
+  
+  "workbench.startupEditor": "newUntitledFile",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+
+  "workbench.colorTheme": "In Bed by 7pm",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "cSpell.userWords": [
+    "Alasdair",
+    "prefetch"
+  ]
+}

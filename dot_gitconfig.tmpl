@@ -1,0 +1,20 @@
+[user]
+  name = {{ .fullname | quote }}
+  email = {{ .email | quote }}
+
+[core]
+  pager = delta
+  excludesfile = {{ .chezmoi.homeDir }}/.gitignore_global
+
+[init]
+  defaultBranch = main
+
+[pull]
+  rebase = false
+
+[delta]
+  line-numbers = true
+
+[merge "npm-merge-driver"]
+  name = automatically merge npm lockfiles
+  driver = npx npm-merge-driver merge %A %O %B %P
