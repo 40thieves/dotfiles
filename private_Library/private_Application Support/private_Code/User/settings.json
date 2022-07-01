@@ -9,16 +9,19 @@
   "editor.dragAndDrop": false,
   "editor.formatOnPaste": true,
   "editor.rulers": [80],
-
-  "editor.multiCursorModifier": "ctrlCmd",
-  // "editor.snippetSuggestions": "top",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.semanticHighlighting.enabled": true,
 
   "workbench.sideBar.location": "right",
   "explorer.openEditors.visible": 0,
   
   "workbench.startupEditor": "newUntitledFile",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
+
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  "editor.formatOnSave": true,
 
   "workbench.colorTheme": "In Bed by 7pm",
 
@@ -40,6 +43,17 @@
 
   "cSpell.userWords": [
     "Alasdair",
-    "prefetch"
+    "allowlist",
+    "codemirror",
+    "csrf",
+    "fallback",
+    "inbox",
+    "prefetch",
+    "preprocessors",
+    "repos",
+    "rerender",
+    "subdomain",
+    "unprocessable",
+    "vendored"
   ]
 }
