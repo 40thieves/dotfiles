@@ -31,11 +31,8 @@ brew "postgresql", restart_service: true
 
 {{ if eq .env "work" }}
 brew "ansible"
-brew "coreutils"
-brew "diffutils"
 brew "gh"
 brew "heroku"
-brew "make"
 brew "rbenv"
 brew "sops"
 {{ end }}
