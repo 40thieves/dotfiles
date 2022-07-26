@@ -22,8 +22,16 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Disable "natural" scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
-# TO re-enable:
+# To re-enable:
 # defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+
+# Set the icon size of Dock items to 36 pixels
+defaults write com.apple.dock tilesize -int 36
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+# To re-enable:
+# defaults write com.apple.dock autohide -bool false
 
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
