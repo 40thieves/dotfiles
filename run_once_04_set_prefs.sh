@@ -48,5 +48,11 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 # To re-enable:
 # defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool true
 
+# Disable hot corners
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+
 # Disable annoying iCloud notification in System Prefs
 # defaults delete com.apple.systempreferences AttentionPrefBundleIDs
