@@ -43,6 +43,9 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # To disable
 # defaults write NSGlobalDomain AppleShowAllExtensions -bool false
 
+# Set default Finder view to Columns view
+defaults write com.apple.Finder FXPreferredViewStyle clmv
+
 # Disable automatic full stop substitution
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 # To re-enable:
