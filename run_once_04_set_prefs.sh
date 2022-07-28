@@ -59,3 +59,6 @@ defaults write com.apple.dock wvous-br-corner -int 0
 
 # Disable annoying iCloud notification in System Prefs
 # defaults delete com.apple.systempreferences AttentionPrefBundleIDs
+
+killall Dock
+killall Finder
