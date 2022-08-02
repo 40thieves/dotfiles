@@ -60,7 +60,8 @@ unsetopt share_history
 export EDITOR='code -n -w'
 
 # Add volta to path
-export PATH={{ .chezmoi.homeDir }}.volta/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 {{ if eq .env "work" }}
 # Work only
