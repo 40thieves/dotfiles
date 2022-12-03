@@ -33,9 +33,9 @@ brew "postgresql", restart_service: true
 {{ if eq .env "work" }}
 brew "ansible"
 brew "coreutils"
+brew "diffutils"
 brew "gh"
 brew "gnu-sed"
-brew "heroku"
 brew "rbenv"
 brew "sops"
 {{ end }}
@@ -59,8 +59,7 @@ cask "qlcolorcode"
 cask "slack"
 cask "spotify"
 cask "sublime-text"
-cask "ticktick"
-cask "tweetbot"
+cask "todoist"
 cask "typora"
 cask "visual-studio-code"
 cask "vlc"
@@ -74,9 +73,11 @@ cask "tableplus"
 {{ end }}
 
 {{ if eq .env "work" }}
+cask "browserstacklocal"
 cask "docker"
 cask "front"
 cask "google-cloud-sdk"
+cask "ngrok"
 cask "robo-3t"
 {{ end }}
 EOF
