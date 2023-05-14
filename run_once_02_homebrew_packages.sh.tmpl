@@ -25,7 +25,7 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
 {{ if eq .env "personal" }}
-brew "postgresql", restart_service: true
+brew "postgresql@15", restart_service: true
 {{ end }}
 
 {{ if eq .env "work" }}
