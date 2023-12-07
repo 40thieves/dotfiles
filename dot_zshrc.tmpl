@@ -66,6 +66,9 @@ export PATH="/usr/local/sbin:$PATH"
 # For whatever reason, the postgres v15 package is "key-only" which means that
 # we have to manually add it to the path
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+
+# Read Github PAT token for local development of the CYF curriculum from 1password
+export CYF_CURRICULUM_GITHUB_BEARER_TOKEN="{{ onepasswordRead "op://Personal/GitHub/CYF Curriculum Personal Access Token" }}"
 {{end}}
 
 # Add volta to path
