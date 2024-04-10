@@ -32,6 +32,8 @@ function tree() {
   command tree -aC -I '.git|node_modules' --dirsfirst "$@" | less -FRNX
 }
 
+alias arc-cli='CHROME_BUNDLE_IDENTIFIER="company.thebrowser.Browser" chrome-cli "$@"'
+
 {{ if eq .env "work" }}
 # Work only
 
