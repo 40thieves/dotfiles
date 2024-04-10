@@ -6,7 +6,6 @@ brew bundle --no-lock --file=/dev/stdin <<EOF
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "heroku/brew"
 
 brew "bat"
 brew "fzf"
@@ -38,14 +37,15 @@ brew "rbenv"
 brew "sops"
 {{ end }}
 
-cask "alfred"
+cask "raycast"
 cask "bartender"
 cask "dropbox"
 cask "fantastical"
 cask "firefox"
 cask "font-fira-code"
 cask "gitup"
-cask "google-chrome"
+# For some reason brew is complaining about the existing Chrome instance I have installed
+# cask "google-chrome"
 cask "iterm2"
 cask "kap"
 cask "microsoft-edge"
