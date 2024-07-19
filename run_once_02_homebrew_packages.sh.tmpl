@@ -12,40 +12,30 @@ brew "fzf"
 brew "git"
 brew "git-delta"
 brew "jq"
-brew "pandoc"
 brew "pick"
 brew "tldr"
 brew "tree"
 brew "volta"
-brew "wifi-password"
-brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
 {{ if eq .env "personal" }}
-brew "postgresql@15", restart_service: true
+brew "postgresql@16", restart_service: true
 {{ end }}
 
 {{ if eq .env "work" }}
-brew "ansible"
 brew "coreutils"
 brew "diffutils"
-brew "gh"
-brew "gnu-sed"
-brew "rbenv"
-brew "sops"
 {{ end }}
 
-cask "raycast"
-cask "bartender"
+cask "arc"
 cask "dropbox"
 cask "fantastical"
 cask "firefox"
 cask "font-fira-code"
 cask "gitup"
-# For some reason brew is complaining about the existing Chrome instance I have installed
-# cask "google-chrome"
+cask "google-chrome"
 cask "iterm2"
 cask "kap"
 cask "microsoft-edge"
@@ -53,6 +43,7 @@ cask "mimestream"
 cask "minecraft"
 cask "moom"
 cask "obsidian"
+cask "raycast"
 cask "slack"
 cask "spotify"
 cask "sublime-text"
@@ -64,18 +55,15 @@ cask "whatsapp"
 cask "zoom"
 
 {{ if eq .env "personal" }}
+cask "1password"
+cask "1password-cli"
 cask "backblaze"
 cask "calibre"
 cask "tableplus"
 {{ end }}
 
 {{ if eq .env "work" }}
-cask "browserstacklocal"
 cask "docker"
-cask "front"
-cask "google-cloud-sdk"
-cask "ngrok"
-cask "robo-3t"
 {{ end }}
 EOF
 

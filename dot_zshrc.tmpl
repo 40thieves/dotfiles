@@ -72,10 +72,3 @@ export CYF_CURRICULUM_GITHUB_BEARER_TOKEN="{{ onepasswordRead "op://Personal/Git
 # Add volta to path
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-
-{{ if eq .env "work" }}
-# Work only
-
-# Set up sed PATH
-PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
-{{ end }}
