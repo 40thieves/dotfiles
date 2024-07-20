@@ -45,6 +45,9 @@ plugins=(
 # https://ohmyz.sh/
 source $ZSH/oh-my-zsh.sh
 
+# Add extra homebrew path
+export PATH="/opt/homebrew/bin:$PATH"
+
 # Set up zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
@@ -58,9 +61,6 @@ unsetopt share_history
 
 # Set VSCode as preferred editor
 export EDITOR='code -n -w'
-
-# Add extra homebrew path
-export PATH="/usr/local/sbin:$PATH"
 
 # For whatever reason, the postgres v15 package is "key-only" which means that
 # we have to manually add it to the path
