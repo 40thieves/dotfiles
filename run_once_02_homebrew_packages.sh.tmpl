@@ -7,20 +7,24 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 
 brew "bat"
+brew "chrome-cli"
 brew "fzf"
-brew "git"
 brew "git-delta"
+brew "git"
 brew "jq"
 brew "pick"
 brew "tldr"
 brew "tree"
 brew "volta"
-brew "zsh"
+brew "yt-dlp"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
+brew "zsh"
 
 {{ if eq .env "personal" }}
 brew "postgresql@16", restart_service: true
+brew "flyctl"
+brew "hugo"
 {{ end }}
 
 {{ if eq .env "work" }}
