@@ -66,6 +66,10 @@ export EDITOR='code -n -w'
 # we have to manually add it to the path
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
 
+# Read Github PAT token for local development of the CYF curriculum from 1password
+# IMPORTANT: This is commented out because we need to install 1password/1password-cli and set them up before this works
+# export CYF_CURRICULUM_GITHUB_BEARER_TOKEN='{{ onepasswordRead "op://Personal/GitHub/CYF Curriculum Personal Access Token" }}'
+
 # Add volta to path
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
