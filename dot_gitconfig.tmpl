@@ -5,15 +5,30 @@
 [core]
   pager = delta
   excludesfile = {{ .chezmoi.homeDir }}/.gitignore_global
+  {{- if eq .env "work" }}
+  ignorecase = true
+  {{- end }}
 
 [init]
   defaultBranch = main
+{{ if eq .env "work" }}
+[fetch]
+  prune = true
+{{ end }}
+{{- if eq .env "work" }}
+[push]
+  autosetupremote = true
+{{- end }}
 
 [branch]
   sort = -committerdate
 
 [pull]
+  {{- if eq .env "personal" }}
   rebase = false
+  {{- else if eq .env "work" }}
+  rebase = true
+  {{- end }}
 
 {{ if eq .env "personal" }}
 [push]
