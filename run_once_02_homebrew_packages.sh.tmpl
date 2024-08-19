@@ -38,7 +38,10 @@ cask "fantastical"
 cask "firefox"
 cask "font-fira-code"
 cask "gitup"
+{{- if eq .env "personal" }}
+# Preinstalled on the work machine
 cask "google-chrome"
+{{- end }}
 cask "iterm2"
 cask "jordanbaird-ice"
 cask "kap"
@@ -49,7 +52,10 @@ cask "minecraft"
 cask "moom"
 cask "obsidian"
 cask "raycast"
+{{- if eq .env "personal" }}
+# Preinstalled on the work machine
 cask "slack"
+{{- end }}
 cask "spotify"
 cask "sublime-text"
 cask "todoist"
