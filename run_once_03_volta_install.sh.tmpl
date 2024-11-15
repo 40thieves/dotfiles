@@ -2,5 +2,7 @@
 
 set -e
 
+{{ if eq .env "personal" }}
 volta install node
 volta setup
+{{ end }}

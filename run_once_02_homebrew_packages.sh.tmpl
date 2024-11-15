@@ -15,23 +15,26 @@ brew "jq"
 brew "pick"
 brew "tldr"
 brew "tree"
-brew "volta"
-brew "yt-dlp"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "zsh"
 
 {{ if eq .env "personal" }}
-brew "postgresql@16", restart_service: true
 brew "flyctl"
 brew "hugo"
+brew "postgresql@16", restart_service: true
+brew "volta"
+brew "yt-dlp"
 {{ end }}
 
 {{ if eq .env "work" }}
 brew "coreutils"
 brew "diffutils"
-brew "pre-commit"
 brew "jq"
+brew "nvm"
+brew "pnpm"
+brew "postgresql@16"
+brew "pre-commit"
 brew "yq"
 {{ end }}
 
