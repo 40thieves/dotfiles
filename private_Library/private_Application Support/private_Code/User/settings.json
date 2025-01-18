@@ -24,6 +24,13 @@
 
   "editor.formatOnSave": true,
 
+  "workbench.colorCustomizations": {
+    "[In Bed by 7pm]": {
+      // Fix bad contrast of tabs text on unfocused split panes
+      "tab.unfocusedActiveBackground": "#292c3d",
+      "tab.unfocusedInactiveForeground": "#fff"
+    }
+  },
   "workbench.colorTheme": "In Bed by 7pm",
 
   "extensions.ignoreRecommendations": true,
