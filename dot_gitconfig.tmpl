@@ -9,8 +9,16 @@
 [init]
   defaultBranch = main
 
+[branch]
+  sort = -committerdate
+
 [pull]
   rebase = false
+
+{{ if eq .env "personal" }}
+[push]
+  autoSetupRemote = true
+{{ end }}
 
 [delta]
   line-numbers = true
