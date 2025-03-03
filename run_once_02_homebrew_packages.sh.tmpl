@@ -13,6 +13,7 @@ brew "git-delta"
 brew "git"
 brew "jq"
 brew "pick"
+brew "postgresql@16", restart_service: true
 brew "tldr"
 brew "tree"
 brew "zsh-completions"
@@ -22,7 +23,6 @@ brew "zsh"
 {{ if eq .env "personal" }}
 brew "flyctl"
 brew "hugo"
-brew "postgresql@16", restart_service: true
 brew "volta"
 brew "yt-dlp"
 {{ end }}
@@ -34,7 +34,6 @@ brew "jq"
 brew "nvm"
 brew "pipx"
 brew "pnpm"
-brew "postgresql@16"
 brew "pre-commit"
 brew "pyenv"
 brew "xz"

@@ -62,9 +62,9 @@ unsetopt share_history
 # Set VSCode as preferred editor
 export EDITOR='code -n -w'
 
-# For whatever reason, the postgres v15 package is "key-only" which means that
+# For whatever reason, the postgres v16 package is "keg-only" which means that
 # we have to manually add it to the path
-export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 # Add volta to path
 export VOLTA_HOME="$HOME/.volta"
