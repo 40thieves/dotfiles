@@ -11,17 +11,14 @@
 
 [init]
   defaultBranch = main
+
+[branch]
+  sort = -committerdate
+
 {{ if eq .env "work" }}
 [fetch]
   prune = true
 {{ end }}
-{{- if eq .env "work" }}
-[push]
-  autosetupremote = true
-{{- end }}
-
-[branch]
-  sort = -committerdate
 
 [pull]
   {{- if eq .env "personal" }}
@@ -30,10 +27,8 @@
   rebase = true
   {{- end }}
 
-{{ if eq .env "personal" }}
 [push]
   autoSetupRemote = true
-{{ end }}
 
 [delta]
   line-numbers = true
