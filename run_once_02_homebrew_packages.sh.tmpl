@@ -13,7 +13,6 @@ brew "git-delta"
 brew "git"
 brew "jq"
 brew "pick"
-brew "postgresql@16", restart_service: true
 brew "tldr"
 brew "tree"
 brew "zsh-completions"
@@ -23,6 +22,7 @@ brew "zsh"
 {{ if eq .env "personal" }}
 brew "flyctl"
 brew "hugo"
+brew "postgresql@16", restart_service: true
 brew "volta"
 brew "yt-dlp"
 {{ end }}
@@ -36,6 +36,7 @@ brew "kubernetes-cli"
 brew "nvm"
 brew "pipx"
 brew "pnpm"
+brew "postgresql@17", restart_service: true
 brew "pre-commit"
 brew "pyenv"
 brew "xz"
@@ -58,7 +59,9 @@ cask "kap"
 cask "keyboardcleantool"
 cask "microsoft-edge"
 cask "mimestream"
+{{- if eq .env "personal" }}
 cask "minecraft"
+{{- end }}
 cask "moom"
 cask "obsidian"
 cask "raycast"
@@ -80,10 +83,6 @@ cask "1password-cli"
 cask "backblaze"
 cask "calibre"
 cask "tableplus"
-{{ end }}
-
-{{ if eq .env "work" }}
-cask "docker"
 {{ end }}
 EOF
 
