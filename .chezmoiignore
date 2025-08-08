@@ -1,7 +1,19 @@
 README.md
 
 # Seems like this should be ignored by default, but I guess not
+
 chezmoi
 
+# OMZ gubbins
+
+.oh-my-zsh/cache
+.oh-my-zsh/plugins
+.oh-my-zsh/themes
+
 # Manually managed config
+
 manual_config
+
+{{- if ne .env "work" }}
+.local/bin/executable_review
+{{- end }}
