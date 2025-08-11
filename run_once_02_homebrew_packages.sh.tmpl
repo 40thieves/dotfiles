@@ -57,6 +57,10 @@ cask "iterm2"
 cask "jordanbaird-ice"
 cask "kap"
 cask "keyboardcleantool"
+{{- if eq .env "work" }}
+# Used for review script
+cask "marked-app"
+{{- end }}
 cask "microsoft-edge"
 cask "mimestream"
 {{- if eq .env "personal" }}
